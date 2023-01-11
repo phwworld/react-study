@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Object Shorthand Assignment
+    let name = 'legend';
+    let age = 30;
+
+    let person1 = {
+      name: name,
+      age: age
+    }
+
+    let person2 = {
+      name,
+      age
+    }
+
+    // console.log(person1, person2);
+
+    // Destructuring
+    let person3 = {
+      name2: 'legend',
+      age2: 40
+    }
+
+    // let name2 = person3.name;
+    // let age2 = person3.age;
+
+    let {name2, age2} = person3;
+
+    console.log(name2, age2);
+
+    let array = [1, 2, 3, 4];
+    let [a, b] = array;
+
+    console.log(a, b);
+
+    // spread
+    let p1 = {name: 'phwworld', age: 35};
+    let p2 = {...p1, adr: 'seoul', name: 'test'};
+    let p3 = p1;
+    console.log(p1);
+    console.log(p2);
+    console.log(p3);
+    console.log(p1 === p2);
+    console.log(p1 === p3);
+  </script>
+</body>
+</html>
